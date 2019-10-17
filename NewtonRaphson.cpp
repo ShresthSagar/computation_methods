@@ -10,7 +10,7 @@ double f(double x)
      return y;
 }
 
-double secfun(double x0, double x1 )
+double newfun(double x0, double x1 )
 {
 double x2 ;
      while(1)
@@ -25,7 +25,7 @@ double x2 ;
           {
                x0=x1;
                x1=x2;
-               x2 = secfun(x0,x1);
+               x2 = newfun(x0,x1);
                return x2;
           }
 
@@ -50,7 +50,6 @@ int signf(double x)
 
 int main()
 {
-
 int sign0,sign1;
 double x0=0,x1=1,x2=0,x,y,mid;
 std :: cout<<"EQUATION  OF  FORM  :  Ax^3 + Bx^2 + Cx + D = 0\n";
@@ -71,7 +70,7 @@ sign1 = signf(x1);
 
       if(sign0!=sign1)
       {
-       x2=secfun(x0,x1);
+       x2=newfun(x0,x1);
         if(fabs(f(x2))<0.001)
           break;
 
@@ -81,10 +80,8 @@ sign1 = signf(x1);
                x0++;
                x1=x0+1;
           }
-
 }
-
-
+     
 }
 
 
