@@ -3,7 +3,7 @@
 #include<iostream>
 #include<math.h>
 #include<stdlib.h>
-
+#include<stdio.h>
 int A,B,C,D;
 
 double f(double x)
