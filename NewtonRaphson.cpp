@@ -53,16 +53,16 @@ int main()
 int sign0,sign1;
 double x0=0,x1=1,x2=0,x,y,mid;
 std :: cout<<"EQUATION  OF  FORM  :  Ax^3 + Bx^2 + Cx + D = 0\n";
-std :: cout<<"Enter A :";
+std :: cout<<"\nEnter A :";
 std :: cin>> A;
-std :: cout<<"Enter B :";
+std :: cout<<"\nEnter B :";
 std :: cin>> B;
-std :: cout<<"Enter C :";
+std :: cout<<"\nEnter C :";
 std :: cin>> C;
-std :: cout<<"Enter D :";
+std :: cout<<"\nEnter D :";
 std :: cin>> D;
 
-while(1)
+while(true)
 {
 
 sign0 = signf(x0);
